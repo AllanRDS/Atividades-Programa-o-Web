@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="global.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <form action="">
+                <h1>Jogo do MARCIO</h1>
+                <p>
+                    ENCONTRE O MARCIO!!!
+                </p>
+                <p>Você tem escolher um número de 1 a 100</p>
+                <p>Você tem  4 tentativas</p>
+                <p>Senão será abduzido!</p>
+
+                <div class="row">
+                    <label for="Árvore">Árvore : </label>
+                    <input id="valor" type="number" placeholder="00" name="Árvore" onkeydown="verificarEnter(Event)" >
+                </div>
+
+                <div class="row-button">
+                    <input type="button" value="Enviar a Resposta" onclick="calcular()" id="botaoenviar">
+                    <input type="button" value="Nova partida"  onclick="resetar()">
+                </div>
+
+                <div class="javascript">
+                    <h4 id="tentativa"></h4>
+                    <h4 id="resultado"></h4>
+                    <h4 id="dica"></h4>
+                    <h4 id="revelação"></h4>
+                </div>
+
+
+
+            </form>
+        </div>
+    </div>
+
+    <script src="marcio.js"></script>
+    
+</body>
+</html>
